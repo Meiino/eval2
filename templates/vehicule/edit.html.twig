@@ -1,0 +1,19 @@
+{% extends "base.html.twig" %}
+
+{% block body %}
+
+<div class="container">
+
+    <h1>Modification du véhicule</h1>
+
+     {% for message in app.flashes('success') %}
+        <div class=" alert alert-success mt-4">
+            {{ message }}
+        </div>    
+    {% endfor %}
+
+    {{ form(form) }} 
+
+</div>
+
+{% endblock %}
